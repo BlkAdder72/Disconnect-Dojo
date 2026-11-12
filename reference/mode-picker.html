@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Disconnect Dojo · Call setup</title>
+<style>
+* { box-sizing: border-box }
+body { margin:0; color:#292721; background:#f4f1e8; font:16px/1.5 "DM Sans",system-ui,sans-serif }
+main { max-width:980px; margin:6vh auto; padding:0 24px }
+header { padding:30px clamp(24px,5vw,60px) 40px; background:#2b2636; color:#fffbef; border-radius:18px 18px 0 0 }
+.brand { display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.06em }
+.phone { color:#ffb28c; font-size:26px }
+h1 { font:normal clamp(40px,7vw,76px)/1.06 Georgia,serif; margin:26px 0 14px; letter-spacing:-.045em }
+header p { margin:0; max-width:56ch; color:#eee5db }
+.panel { padding:30px clamp(22px,5vw,60px); background:#fffdf7; border:1px solid #d3cec0; border-top:0; border-radius:0 0 18px 18px }
+fieldset { padding:0; margin:0; border:0 }
+legend { font-weight:750; font-size:22px; margin-bottom:15px }
+.choices { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px }
+label { display:flex; align-items:center; gap:10px; padding:15px 12px; border:1px solid #c8c3b8; border-radius:8px; cursor:pointer; font-weight:650 }
+label:has(:checked) { background:#f9e8d9; border-color:#874423; box-shadow:inset 0 0 0 1px #874423 }
+input { accent-color:#874423 }
+.message { margin-top:26px; padding-top:22px; border-top:1px solid #d3cec0 }
+.message label { border:0; padding:0; cursor:default }
+.actions { display:flex; gap:8px; margin:8px 0 }
+#opening { font:16px "IBM Plex Mono",monospace; padding:12px; flex:1; min-width:0; background:#f4f1e8; color:inherit; border:1px solid #c8c3b8; border-radius:6px }
+button { color:white; background:#653720; font:inherit; font-weight:650; padding:10px 18px; border:0; border-radius:6px; cursor:pointer }
+button:hover { background:#492a1b }
+:focus-visible { outline:3px solid #1266a8; outline-offset:3px }
+.hint { margin:6px 0; color:#575248 }
+#status { margin:0; min-height:1.5em; font-weight:650 }
+@media(max-width:700px){.choices{grid-template-columns:1fr 1fr}main{margin:18px auto;padding:0 12px}}
+@media(max-width:420px){.choices{grid-template-columns:1fr}.actions{flex-direction:column}}
+.start {display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:24px 0 12px}
+details {border-top:1px solid #d3cec0;margin-top:20px;padding-top:14px}
+summary {cursor:pointer;font-weight:650}
+details .message {border:0;padding:0;margin-top:12px}
+.calltop {display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+h2 {font:normal 34px Georgia,serif;margin:0}
+.voice {margin:4px 0 0;color:#665d52}
+.secondary {background:transparent;color:#59371e;border:1px solid #b19b89}
+.secondary:hover {background:#faeddf}
+#dialogue {max-height:44vh;min-height:130px;overflow:auto;margin:20px 0;padding:4px 12px 4px 0;scrollbar-width:thin}
+.utterance {margin:0 0 14px;background:#f3efe6;border-radius:0 12px 12px 12px;padding:12px 16px;max-width:85%}
+.utterance.customer {margin-left:auto;background:#ece5ef;border-radius:12px 0 12px 12px}
+.utterance strong {font-size:.85rem}
+.utterance p {margin:3px 0}
+.utterance p {white-space:pre-wrap;overflow-wrap:anywhere}
+#composer label {border:0;padding:0;cursor:default}
+textarea {display:block;width:100%;box-sizing:border-box;margin:8px 0;padding:12px;background:#fffdf7;color:inherit;font:inherit;border:1px solid #867e74;border-radius:8px;resize:vertical}
+button:disabled {opacity:.55;cursor:wait}
+#recap {white-space:pre-line}
+[hidden] {display:none!important}
+.preview details {border:0;margin:0 0 22px;padding:0}.preview summary {color:#653720}.preview .hint {margin:10px 0}.actions {flex-wrap:wrap}#copyOutgoing {margin:0 10px 12px 0}#incomingLabel {margin-top:12px}#relay {margin-bottom:20px}.launch {display:inline-block;background:#653720;color:#fff;padding:10px 18px;border-radius:6px;font-weight:650;text-decoration:none}.launch:hover {background:#492a1b} #hosted h2 {font-size:25px}</style>
+<main>
+<header><div class="brand"><span class="phone" aria-hidden="true">☎</span> Forever Cable</div>
+<h1>Disconnect Dojo</h1>
+<p><strong>You want to cancel. Darren wants his bonus.</strong></p>
+<p>Your $89 internet plan renews tomorrow. Practice calling Darren Pike to cancel before the next month starts.</p></header>
+<div class="panel" id="setup">
+<section aria-labelledby="previewTitle" class="preview"><details>
+<summary id="previewTitle">Preview a call with Darren</summary>
+<p class="hint">Steven Wright Mode · Excerpt from a completed rehearsal</p>
+<div class="utterance customer"><strong>Customer</strong><p>Move it back to the end of one more full active month. I authorize $89 for that month and the $100 termination fee when it ends. Confirm which date applies.</p></div>
+<div class="utterance"><strong>Darren Pike</strong><p>The end of next month applies. Cancellation FCC-C20481 now ends service after one full active month, and tonight’s end date is replaced. You’ll pay $89 for that month’s service plus the $100 termination fee when it ends, $189 total. The current month isn’t refunded, and nothing bills after next month.</p><p>The date went away and came back. The service never left.</p></div>
+</details></section><fieldset><legend>Choose Darren’s voice</legend>
+<div class="choices">
+<label><input type="radio" name="voice" value="Start the call." checked>Normal Mode</label>
+<label><input type="radio" name="voice" value="Don Rickles Mode">Don Rickles Mode</label>
+<label><input type="radio" name="voice" value="Larry David Mode">Larry David Mode</label>
+<label><input type="radio" name="voice" value="Lewis Black Mode">Lewis Black Mode</label>
+<label><input type="radio" name="voice" value="Steven Wright Mode">Steven Wright Mode</label>
+<label><input type="radio" name="voice" value="Deadpool Mode">Deadpool Mode</label>
+</div></fieldset><div id="hosted" class="message" hidden>
+<h2>Play in Claude</h2>
+<p>Start a fresh call with the selected voice in Claude Desktop. Send the prepared opening, then type directly in Claude.</p><a id='directHosted' class='launch'>Start call in Claude Desktop</a><details><summary>Create a reusable simulator window</summary><p>Send the prepared build request, then open the private artifact. The mode picker, conversation and debrief run in that window.</p>
+<a id="launchHosted" class="launch">Create live simulator in Claude</a> <a id="webHosted" target="_blank" rel="noopener">Create in a fresh Claude web window</a>
+<p class="hint">Claude Cowork opens with the simulator rules attached. Allow the artifact to use Claude when prompted. In the web window, attach artifact-runtime.txt from this folder before sending. Keep the artifact for future calls.</p></details>
+</div>
+<div class="message"><label for="customerText">Your reason or question</label>
+<textarea id="customerText" rows="3" placeholder="What would you like to ask Darren?"></textarea>
+<p id="order" class="hint"></p>
+<button id="prepare" type="button">Start manual transcript</button>
+<p class="hint">Use your signed-in Claude Project. Copy each message to Claude and paste Darren’s reply back here to build your call transcript.</p></div><div id="apiStart" hidden><button id="start">Start API call</button><p id="setupStatus" role="status"></p></div></div><section class="panel" id="call" hidden>
+<div class="calltop"><div><h2 id="callTitle" tabindex="-1">On the line with Darren Pike</h2><p class="voice" id="callVoice"></p></div>
+<button class="secondary" id="finish">End call &amp; debrief</button></div>
+<div id="dialogue" role="log" aria-label="Call transcript" tabindex="0"></div>
+<section class="message" id="relay" hidden>
+<p id="relayHelp"></p>
+<textarea id="outgoing" aria-label="Message to send in Claude" rows="2" readonly></textarea>
+<button type="button" id="copyOutgoing">Copy message for Claude</button>
+<a href="claude://claude.ai/project/">Open Claude Desktop</a> · <a href="https://claude.ai/projects" target="_blank" rel="noopener">Open Claude in browser</a>
+<label for="incoming" id="incomingLabel">Darren’s reply from Claude</label>
+<textarea id="incoming" rows="3" placeholder="Paste the reply from your project chat"></textarea>
+<button type="button" id="addIncoming" disabled>Add reply to transcript</button>
+</section><form id="composer"><label for="draft">Your reply</label><textarea id="draft" rows="3" placeholder="Tell Darren why you’re calling, or ask a question."></textarea><button id="send" type="submit">Send reply</button></form>
+<p id="callStatus" role="status"></p>
+<div id="feedback" hidden><h2 tabindex="-1" id="feedbackTitle">Call debrief</h2><p id="recap"></p><button id="restart">Start another rehearsal</button></div>
+</section></main>
+<script src="conversation.js"></script>
+</html>
+
