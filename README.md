@@ -2,7 +2,11 @@
 
 You want to cancel. Darren wants his bonus.
 
-You play Alex Morgan. Your $89 internet plan renews tomorrow, and you want to leave Forever Cable. On the other end is Darren Pike, a former technician who now works in retention. Practice leaving the call knowing when service ends, what you owe, and what happens to the router.
+It took me 20 minutes to cancel my internet. Every time I thought we were done, the rep had one more question or one more offer. I almost kept the service just to get off the phone.
+
+I built Disconnect Dojo so you can practice your own cable or internet cancellation call before you make it. Give Darren Pike, Forever Cable’s retention rep, your own reason for leaving. Ask the questions you want answered and practice saying no until you have what you called for: a cancellation number, an end date, and a clear final bill.
+
+The practice account has an $89 internet plan that renews tomorrow and one leased router.
 
 ## Start in a Claude Project
 
