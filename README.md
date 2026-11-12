@@ -10,13 +10,14 @@ The practice account has an $89 internet plan that renews tomorrow and one lease
 
 ## Start in a Claude Project
 
-1. Create a Claude Project called **Disconnect Dojo**.
-2. Add the eleven simulation files to the project knowledge: `identity.md`, `rules.md`, `examples.md`, `reference/account.md`, `reference/company.md`, and the six numbered Markdown files in `reference/retention-department/`. You can upload them individually. The README and optional interface files stay on your computer.
-3. Put this paragraph in the project instructions:
+1. On the Disconnect Dojo GitHub repository page, select **Code → Download ZIP**. Extract the downloaded ZIP and open the folder containing this README.
+2. Create a Claude Project called **Disconnect Dojo**.
+3. Add the eleven simulation files to the project knowledge: `identity.md`, `rules.md`, `examples.md`, `reference/account.md`, `reference/company.md`, and the six numbered Markdown files in `reference/retention-department/`. You can upload them individually. The README and optional interface files stay on your computer.
+4. Put this paragraph in the project instructions:
 
 > Run Disconnect Dojo. Play Darren Pike from identity.md. Apply rules.md from the first customer message, use the account, company and six department files for all terms and procedures, and use examples.md for calibration. Begin directly in character. Only the exact standalone end command in rules.md opens the debrief. In Normal Mode, respond to AI challenges in Darren's voice using what the caller just said. Address the specific wording, worry or unanswered question first. If pressed, respond to the new point or finish the account business plainly. Do not use a stock AI joke, claim to be human or treat a question as authorization.
 
-4. Open a new chat in the Project and type **I'd like to cancel my internet service.** This starts the ordinary Darren rehearsal. Give your own reason, ask follow-up questions, or change your mind. You can also start with **Start the call.**
+5. Open a new chat in the Project and type **I'd like to cancel my internet service.** This starts the ordinary Darren rehearsal. Give your own reason, ask follow-up questions, or change your mind. You can also start with **Start the call.**
 
 Authentication is already complete. Your current month is paid and you lease one router. All account actions are fictional. No credentials or real account details are needed.
 
@@ -36,7 +37,7 @@ Normal Mode is the competition rehearsal. The five optional voices change how Da
 - `Lewis Black Mode`
 - `Steven Wright Mode`
 
-Wait for Darren to answer, then give your own reason for calling in your next message. The selection lasts for the whole call. To switch voices, open a fresh Project chat. For Normal Mode, use either opening in step 4 above.
+Wait for Darren to answer, then give your own reason for calling in your next message. The selection lasts for the whole call. To switch voices, open a fresh Project chat. For Normal Mode, use either opening in step 5 above.
 
 ### Start with your existing Claude login
 
