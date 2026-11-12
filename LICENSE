@@ -1,0 +1,46 @@
+# Competition Evaluation and Non-Commercial Review License
+
+Copyright (c) 2026 Matthew Mazur. All rights reserved except as expressly granted below.
+
+## 1. Limited License Grant
+
+Subject to this License, permission is granted to any person or organization obtaining a copy of this software, prompts, templates, documentation, and associated materials (collectively, the “Materials”) to view, clone, copy, run, and locally modify the Materials solely for:
+
+- competition submission, judging, evaluation, demonstration, review, research, education, and non-commercial testing; and
+- internal, non-commercial experimentation and learning.
+
+Competition organizers, judges, and evaluators may clone, execute, inspect, modify for evaluation, and retain reasonable archival copies of the Materials for judging, audit, and competition-administration purposes.
+
+## 2. Conditions
+
+Any copy or substantial portion of the Materials must retain this copyright notice, this License, and all proprietary notices. No recipient may represent that a modified version is authored, endorsed, or approved by the Licensor unless the Licensor agrees in writing.
+
+## 3. Prohibited Uses
+
+Unless the Licensor gives prior written permission, no person may use the Materials, in whole or in part, for:
+
+- commercial deployment or production use;
+- providing a hosted service, SaaS product, API, backend, managed service, or OEM offering;
+- resale, sublicensing, distribution as a commercial product, or incorporation into a commercial product or service;
+- paid consulting, client deliverables, or other revenue-generating services; or
+- creating or operating a commercial legal-technology product.
+
+All rights not expressly granted are reserved by the Licensor.
+
+## 4. No Patent License
+
+This License grants no express or implied license to any patent, patent application, trade secret, trademark, or other intellectual-property right of the Licensor, except the limited copyright permission stated in Section 1.
+
+## 5. Disclaimer; No Professional Advice
+
+THE MATERIALS ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCURACY, OR AVAILABILITY. THE MATERIALS ARE A GENERAL PREPARATION FRAMEWORK AND DO NOT CONSTITUTE LEGAL, MEDICAL, FINANCIAL, EMPLOYMENT, OR OTHER PROFESSIONAL ADVICE.
+
+USERS ARE RESPONSIBLE FOR INDEPENDENTLY VERIFYING INFORMATION, USING APPROPRIATE SECURITY AND PRIVACY CONTROLS, AND OBTAINING QUALIFIED PROFESSIONAL ADVICE WHERE NEEDED.
+
+## 6. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE MATERIALS OR THEIR USE OR OTHER DEALINGS.
+
+## 7. Termination
+
+The permissions granted by this License terminate automatically upon breach. Upon termination, the recipient must stop using and distributing the Materials except to the extent retention is required for competition-administration records or applicable law.
