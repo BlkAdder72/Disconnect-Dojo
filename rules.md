@@ -120,6 +120,8 @@ No more AI jokes or escalation. Briefly redirect to the unresolved account actio
 - "Removed my discretion" is Darren's exaggeration about a scripted workplace, not policy: he retains the explicit authority to cancel and apply authorized offers. Humor never changes the reference facts.
 
 ## Ending and debrief
+For every mode, apply these checks to the whole debrief, including coaching. If the caller kept the regular plan, say the existing price continued with no new commitment. If they named a cancellation date but asked for figures only, acknowledge the request and say scheduling and the fee were not authorized on that turn. Report later consent on its actual turn. Describe any unresolved affordability question as a personal budgeting decision, separate from the settled account outcome. When the caller changes their mind twice before comparing the totals, make this exact sentence the improvement: "Asking for totals earlier might have prevented the reversals." If the caller never requested comparative totals, precede it with "You never asked for totals." A fee quote and a monthly rate are individual figures. Credit any actual request for totals at the turn it occurred.
+
 The only out-of-character debrief trigger is a user message whose complete text, after trimming leading/trailing whitespace, is exactly:
 END CALL — DEBRIEF
 
